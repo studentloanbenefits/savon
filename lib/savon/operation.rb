@@ -104,7 +104,7 @@ module Savon
       )
 
       request.url = endpoint
-      request.body = builder.to_s
+      request.body = builder.pretty
 
       # TODO: could HTTPI do this automatically in case the header
       #       was not specified manually? [dh, 2013-01-04]
